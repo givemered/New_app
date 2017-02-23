@@ -1,0 +1,12 @@
+<h3>Schedule an Appointment</h3>
+
+<%= form_for(:appointment, :url => {:action => 'create'}) do |f| %>
+  
+  <%= render(:partial => 'form', :locals => {:f => f}) %><br>
+  
+  <%= f.submit("Schedule Appointment", class: "btn btn-primary") %>
+  
+<% end %>
+
+<hr />
+
